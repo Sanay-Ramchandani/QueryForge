@@ -1,0 +1,20 @@
+[build-system]
+requires = ["setuptools>=65"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "queryforge-research"
+version = "0.1.0"
+description = "Explainable, offline natural language SQLite research prototype"
+requires-python = ">=3.10"
+dependencies = []
+
+[project.optional-dependencies]
+web = ["fastapi>=0.100", "uvicorn>=0.20"]
+dev = ["pytest>=7", "httpx>=0.24", "fastapi>=0.100"]
+
+[tool.setuptools.packages.find]
+include=["queryforge*"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]

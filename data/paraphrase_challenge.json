@@ -1,0 +1,102 @@
+[
+  {
+    "question": "what is the total turnover during 2024",
+    "reference_sql": "SELECT SUM(revenue) FROM financials WHERE year=2024",
+    "ordered": false
+  },
+  {
+    "question": "how many firms are based in Germany",
+    "reference_sql": "SELECT COUNT(*) FROM companies WHERE country='Germany'",
+    "ordered": false
+  },
+  {
+    "question": "list companies with sector technlogy",
+    "reference_sql": "SELECT name FROM companies WHERE sector='Technology'",
+    "ordered": false
+  },
+  {
+    "question": "list firms in Canada",
+    "reference_sql": "SELECT name FROM companies WHERE country='Canada'",
+    "ordered": false
+  },
+  {
+    "question": "top 4 firms by sales for 2024",
+    "reference_sql": "SELECT companies.name,financials.revenue FROM companies JOIN financials ON companies.id=financials.company_id WHERE year=2024 ORDER BY revenue DESC LIMIT 4",
+    "ordered": true
+  },
+  {
+    "question": "smallest 3 firms by headcount in 2023",
+    "reference_sql": "SELECT companies.name,financials.employees FROM companies JOIN financials ON companies.id=financials.company_id WHERE year=2023 ORDER BY employees ASC LIMIT 3",
+    "ordered": true
+  },
+  {
+    "question": "how many healthcare companies are in Canada",
+    "reference_sql": "SELECT COUNT(*) FROM companies WHERE sector='Healthcare' AND country='Canada'",
+    "ordered": false
+  },
+  {
+    "question": "average earnings by country for 2022",
+    "reference_sql": "SELECT country, AVG(profit) FROM companies JOIN financials ON companies.id=financials.company_id WHERE year=2022 GROUP BY country",
+    "ordered": false
+  },
+  {
+    "question": "companies whose profit is at least 10 million in 2024",
+    "reference_sql": "SELECT companies.name FROM companies JOIN financials ON companies.id=financials.company_id WHERE profit>=10000000 AND year=2024",
+    "ordered": false
+  },
+  {
+    "question": "companies whose revenue was below 200 million in 2025",
+    "reference_sql": "SELECT companies.name FROM companies JOIN financials ON companies.id=financials.company_id WHERE revenue<200000000 AND year=2025",
+    "ordered": false
+  },
+  {
+    "question": "show sales in 2024",
+    "reference_sql": "SELECT companies.name,financials.revenue FROM companies JOIN financials ON companies.id=financials.company_id WHERE year=2024",
+    "ordered": false
+  },
+  {
+    "question": "show profit in 2022",
+    "reference_sql": "SELECT companies.name,financials.profit FROM companies JOIN financials ON companies.id=financials.company_id WHERE year=2022",
+    "ordered": false
+  },
+  {
+    "question": "which technology firms are in the UK",
+    "reference_sql": "SELECT name FROM companies WHERE sector='Technology' AND country='UK'",
+    "ordered": false
+  },
+  {
+    "question": "list companies from Norway",
+    "reference_sql": "SELECT name FROM companies WHERE country='Norway'",
+    "ordered": false
+  },
+  {
+    "question": "what is the maximum profit in 2024",
+    "reference_sql": "SELECT MAX(profit) FROM financials WHERE year=2024",
+    "ordered": false
+  },
+  {
+    "question": "companies with employees over 500 in 2024",
+    "reference_sql": "SELECT companies.name FROM companies JOIN financials ON companies.id=financials.company_id WHERE employees>500 AND year=2024",
+    "ordered": false
+  },
+  {
+    "question": "highest profit in 2023",
+    "reference_sql": "SELECT MAX(profit) FROM financials WHERE year=2023",
+    "ordered": false
+  },
+  {
+    "question": "average staff by sector in 2024",
+    "reference_sql": "SELECT sector,AVG(employees) FROM companies JOIN financials ON companies.id=financials.company_id WHERE year=2024 GROUP BY sector",
+    "ordered": false
+  },
+  {
+    "question": "total income in 2022",
+    "reference_sql": "SELECT SUM(profit) FROM financials WHERE year=2022",
+    "ordered": false
+  },
+  {
+    "question": "companies with turnover below 100 million in 2022",
+    "reference_sql": "SELECT companies.name FROM companies JOIN financials ON companies.id=financials.company_id WHERE revenue<100000000 AND year=2022",
+    "ordered": false
+  }
+]

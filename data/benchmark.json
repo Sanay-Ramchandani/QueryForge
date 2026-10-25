@@ -1,0 +1,428 @@
+[
+  {
+    "question": "show companies",
+    "reference_sql": "SELECT name FROM companies",
+    "category": "entity",
+    "ordered": false
+  },
+  {
+    "question": "list companies",
+    "reference_sql": "SELECT name FROM companies",
+    "category": "entity",
+    "ordered": false
+  },
+  {
+    "question": "find companies",
+    "reference_sql": "SELECT name FROM companies",
+    "category": "entity",
+    "ordered": false
+  },
+  {
+    "question": "get all companies",
+    "reference_sql": "SELECT name FROM companies",
+    "category": "entity",
+    "ordered": false
+  },
+  {
+    "question": "list technology companies",
+    "reference_sql": "SELECT name FROM companies WHERE sector = 'Technology'",
+    "category": "filter",
+    "ordered": false
+  },
+  {
+    "question": "which companies are in the technology sector",
+    "reference_sql": "SELECT name FROM companies WHERE sector = 'Technology'",
+    "category": "filter",
+    "ordered": false
+  },
+  {
+    "question": "list healthcare companies",
+    "reference_sql": "SELECT name FROM companies WHERE sector = 'Healthcare'",
+    "category": "filter",
+    "ordered": false
+  },
+  {
+    "question": "which companies are in the healthcare sector",
+    "reference_sql": "SELECT name FROM companies WHERE sector = 'Healthcare'",
+    "category": "filter",
+    "ordered": false
+  },
+  {
+    "question": "list energy companies",
+    "reference_sql": "SELECT name FROM companies WHERE sector = 'Energy'",
+    "category": "filter",
+    "ordered": false
+  },
+  {
+    "question": "which companies are in the energy sector",
+    "reference_sql": "SELECT name FROM companies WHERE sector = 'Energy'",
+    "category": "filter",
+    "ordered": false
+  },
+  {
+    "question": "list retail companies",
+    "reference_sql": "SELECT name FROM companies WHERE sector = 'Retail'",
+    "category": "filter",
+    "ordered": false
+  },
+  {
+    "question": "which companies are in the retail sector",
+    "reference_sql": "SELECT name FROM companies WHERE sector = 'Retail'",
+    "category": "filter",
+    "ordered": false
+  },
+  {
+    "question": "list automotive companies",
+    "reference_sql": "SELECT name FROM companies WHERE sector = 'Automotive'",
+    "category": "filter",
+    "ordered": false
+  },
+  {
+    "question": "which companies are in the automotive sector",
+    "reference_sql": "SELECT name FROM companies WHERE sector = 'Automotive'",
+    "category": "filter",
+    "ordered": false
+  },
+  {
+    "question": "which companies are in UK",
+    "reference_sql": "SELECT name FROM companies WHERE country = 'UK'",
+    "category": "filter",
+    "ordered": false
+  },
+  {
+    "question": "how many companies are in UK",
+    "reference_sql": "SELECT COUNT(*) FROM companies WHERE country='UK'",
+    "category": "count",
+    "ordered": false
+  },
+  {
+    "question": "which companies are in US",
+    "reference_sql": "SELECT name FROM companies WHERE country = 'US'",
+    "category": "filter",
+    "ordered": false
+  },
+  {
+    "question": "how many companies are in US",
+    "reference_sql": "SELECT COUNT(*) FROM companies WHERE country='US'",
+    "category": "count",
+    "ordered": false
+  },
+  {
+    "question": "which companies are in Germany",
+    "reference_sql": "SELECT name FROM companies WHERE country = 'Germany'",
+    "category": "filter",
+    "ordered": false
+  },
+  {
+    "question": "how many companies are in Germany",
+    "reference_sql": "SELECT COUNT(*) FROM companies WHERE country='Germany'",
+    "category": "count",
+    "ordered": false
+  },
+  {
+    "question": "which companies are in Norway",
+    "reference_sql": "SELECT name FROM companies WHERE country = 'Norway'",
+    "category": "filter",
+    "ordered": false
+  },
+  {
+    "question": "how many companies are in Norway",
+    "reference_sql": "SELECT COUNT(*) FROM companies WHERE country='Norway'",
+    "category": "count",
+    "ordered": false
+  },
+  {
+    "question": "which companies are in Canada",
+    "reference_sql": "SELECT name FROM companies WHERE country = 'Canada'",
+    "category": "filter",
+    "ordered": false
+  },
+  {
+    "question": "how many companies are in Canada",
+    "reference_sql": "SELECT COUNT(*) FROM companies WHERE country='Canada'",
+    "category": "count",
+    "ordered": false
+  },
+  {
+    "question": "show revenue in 2024",
+    "reference_sql": "SELECT companies.name, financials.revenue FROM companies JOIN financials ON financials.company_id = companies.id WHERE financials.year = 2024",
+    "category": "join",
+    "ordered": false
+  },
+  {
+    "question": "show revenue in 2023",
+    "reference_sql": "SELECT companies.name, financials.revenue FROM companies JOIN financials ON financials.company_id = companies.id WHERE financials.year = 2023",
+    "category": "join",
+    "ordered": false
+  },
+  {
+    "question": "total revenue in 2024",
+    "reference_sql": "SELECT SUM(revenue) FROM financials WHERE year = 2024",
+    "category": "aggregate",
+    "ordered": false
+  },
+  {
+    "question": "average revenue in 2024",
+    "reference_sql": "SELECT AVG(revenue) FROM financials WHERE year = 2024",
+    "category": "aggregate",
+    "ordered": false
+  },
+  {
+    "question": "companies with revenue above 100 million in 2024",
+    "reference_sql": "SELECT companies.name FROM companies JOIN financials ON financials.company_id = companies.id WHERE financials.revenue>100000000 AND financials.year = 2024",
+    "category": "conditional",
+    "ordered": false
+  },
+  {
+    "question": "companies with revenue below 100 million in 2024",
+    "reference_sql": "SELECT companies.name FROM companies JOIN financials ON financials.company_id = companies.id WHERE financials.revenue<100000000 AND financials.year = 2024",
+    "category": "conditional",
+    "ordered": false
+  },
+  {
+    "question": "companies with revenue above 150 million in 2024",
+    "reference_sql": "SELECT companies.name FROM companies JOIN financials ON financials.company_id = companies.id WHERE financials.revenue>150000000 AND financials.year = 2024",
+    "category": "conditional",
+    "ordered": false
+  },
+  {
+    "question": "companies with revenue below 150 million in 2024",
+    "reference_sql": "SELECT companies.name FROM companies JOIN financials ON financials.company_id = companies.id WHERE financials.revenue<150000000 AND financials.year = 2024",
+    "category": "conditional",
+    "ordered": false
+  },
+  {
+    "question": "top 3 companies by revenue in 2024",
+    "reference_sql": "SELECT companies.name, financials.revenue FROM companies JOIN financials ON financials.company_id = companies.id WHERE financials.year = 2024 ORDER BY financials.revenue DESC LIMIT 3",
+    "category": "rank",
+    "ordered": true
+  },
+  {
+    "question": "lowest 3 companies by revenue in 2024",
+    "reference_sql": "SELECT companies.name, financials.revenue FROM companies JOIN financials ON financials.company_id = companies.id WHERE financials.year = 2024 ORDER BY financials.revenue ASC LIMIT 3",
+    "category": "rank",
+    "ordered": true
+  },
+  {
+    "question": "top 5 companies by revenue in 2024",
+    "reference_sql": "SELECT companies.name, financials.revenue FROM companies JOIN financials ON financials.company_id = companies.id WHERE financials.year = 2024 ORDER BY financials.revenue DESC LIMIT 5",
+    "category": "rank",
+    "ordered": true
+  },
+  {
+    "question": "lowest 5 companies by revenue in 2024",
+    "reference_sql": "SELECT companies.name, financials.revenue FROM companies JOIN financials ON financials.company_id = companies.id WHERE financials.year = 2024 ORDER BY financials.revenue ASC LIMIT 5",
+    "category": "rank",
+    "ordered": true
+  },
+  {
+    "question": "show profit in 2024",
+    "reference_sql": "SELECT companies.name, financials.profit FROM companies JOIN financials ON financials.company_id = companies.id WHERE financials.year = 2024",
+    "category": "join",
+    "ordered": false
+  },
+  {
+    "question": "show profit in 2023",
+    "reference_sql": "SELECT companies.name, financials.profit FROM companies JOIN financials ON financials.company_id = companies.id WHERE financials.year = 2023",
+    "category": "join",
+    "ordered": false
+  },
+  {
+    "question": "total profit in 2024",
+    "reference_sql": "SELECT SUM(profit) FROM financials WHERE year = 2024",
+    "category": "aggregate",
+    "ordered": false
+  },
+  {
+    "question": "average profit in 2024",
+    "reference_sql": "SELECT AVG(profit) FROM financials WHERE year = 2024",
+    "category": "aggregate",
+    "ordered": false
+  },
+  {
+    "question": "companies with profit above 10 million in 2024",
+    "reference_sql": "SELECT companies.name FROM companies JOIN financials ON financials.company_id = companies.id WHERE financials.profit>10000000 AND financials.year = 2024",
+    "category": "conditional",
+    "ordered": false
+  },
+  {
+    "question": "companies with profit below 10 million in 2024",
+    "reference_sql": "SELECT companies.name FROM companies JOIN financials ON financials.company_id = companies.id WHERE financials.profit<10000000 AND financials.year = 2024",
+    "category": "conditional",
+    "ordered": false
+  },
+  {
+    "question": "companies with profit above 20 million in 2024",
+    "reference_sql": "SELECT companies.name FROM companies JOIN financials ON financials.company_id = companies.id WHERE financials.profit>20000000 AND financials.year = 2024",
+    "category": "conditional",
+    "ordered": false
+  },
+  {
+    "question": "companies with profit below 20 million in 2024",
+    "reference_sql": "SELECT companies.name FROM companies JOIN financials ON financials.company_id = companies.id WHERE financials.profit<20000000 AND financials.year = 2024",
+    "category": "conditional",
+    "ordered": false
+  },
+  {
+    "question": "top 3 companies by profit in 2024",
+    "reference_sql": "SELECT companies.name, financials.profit FROM companies JOIN financials ON financials.company_id = companies.id WHERE financials.year = 2024 ORDER BY financials.profit DESC LIMIT 3",
+    "category": "rank",
+    "ordered": true
+  },
+  {
+    "question": "lowest 3 companies by profit in 2024",
+    "reference_sql": "SELECT companies.name, financials.profit FROM companies JOIN financials ON financials.company_id = companies.id WHERE financials.year = 2024 ORDER BY financials.profit ASC LIMIT 3",
+    "category": "rank",
+    "ordered": true
+  },
+  {
+    "question": "top 5 companies by profit in 2024",
+    "reference_sql": "SELECT companies.name, financials.profit FROM companies JOIN financials ON financials.company_id = companies.id WHERE financials.year = 2024 ORDER BY financials.profit DESC LIMIT 5",
+    "category": "rank",
+    "ordered": true
+  },
+  {
+    "question": "lowest 5 companies by profit in 2024",
+    "reference_sql": "SELECT companies.name, financials.profit FROM companies JOIN financials ON financials.company_id = companies.id WHERE financials.year = 2024 ORDER BY financials.profit ASC LIMIT 5",
+    "category": "rank",
+    "ordered": true
+  },
+  {
+    "question": "show employees in 2024",
+    "reference_sql": "SELECT companies.name, financials.employees FROM companies JOIN financials ON financials.company_id = companies.id WHERE financials.year = 2024",
+    "category": "join",
+    "ordered": false
+  },
+  {
+    "question": "show employees in 2023",
+    "reference_sql": "SELECT companies.name, financials.employees FROM companies JOIN financials ON financials.company_id = companies.id WHERE financials.year = 2023",
+    "category": "join",
+    "ordered": false
+  },
+  {
+    "question": "total employees in 2024",
+    "reference_sql": "SELECT SUM(employees) FROM financials WHERE year = 2024",
+    "category": "aggregate",
+    "ordered": false
+  },
+  {
+    "question": "average employees in 2024",
+    "reference_sql": "SELECT AVG(employees) FROM financials WHERE year = 2024",
+    "category": "aggregate",
+    "ordered": false
+  },
+  {
+    "question": "companies with employees above 300 in 2024",
+    "reference_sql": "SELECT companies.name FROM companies JOIN financials ON financials.company_id = companies.id WHERE financials.employees>300 AND financials.year = 2024",
+    "category": "conditional",
+    "ordered": false
+  },
+  {
+    "question": "companies with employees below 300 in 2024",
+    "reference_sql": "SELECT companies.name FROM companies JOIN financials ON financials.company_id = companies.id WHERE financials.employees<300 AND financials.year = 2024",
+    "category": "conditional",
+    "ordered": false
+  },
+  {
+    "question": "companies with employees above 500 in 2024",
+    "reference_sql": "SELECT companies.name FROM companies JOIN financials ON financials.company_id = companies.id WHERE financials.employees>500 AND financials.year = 2024",
+    "category": "conditional",
+    "ordered": false
+  },
+  {
+    "question": "companies with employees below 500 in 2024",
+    "reference_sql": "SELECT companies.name FROM companies JOIN financials ON financials.company_id = companies.id WHERE financials.employees<500 AND financials.year = 2024",
+    "category": "conditional",
+    "ordered": false
+  },
+  {
+    "question": "top 3 companies by employees in 2024",
+    "reference_sql": "SELECT companies.name, financials.employees FROM companies JOIN financials ON financials.company_id = companies.id WHERE financials.year = 2024 ORDER BY financials.employees DESC LIMIT 3",
+    "category": "rank",
+    "ordered": true
+  },
+  {
+    "question": "lowest 3 companies by employees in 2024",
+    "reference_sql": "SELECT companies.name, financials.employees FROM companies JOIN financials ON financials.company_id = companies.id WHERE financials.year = 2024 ORDER BY financials.employees ASC LIMIT 3",
+    "category": "rank",
+    "ordered": true
+  },
+  {
+    "question": "top 5 companies by employees in 2024",
+    "reference_sql": "SELECT companies.name, financials.employees FROM companies JOIN financials ON financials.company_id = companies.id WHERE financials.year = 2024 ORDER BY financials.employees DESC LIMIT 5",
+    "category": "rank",
+    "ordered": true
+  },
+  {
+    "question": "lowest 5 companies by employees in 2024",
+    "reference_sql": "SELECT companies.name, financials.employees FROM companies JOIN financials ON financials.company_id = companies.id WHERE financials.year = 2024 ORDER BY financials.employees ASC LIMIT 5",
+    "category": "rank",
+    "ordered": true
+  },
+  {
+    "question": "average revenue by sector in 2024",
+    "reference_sql": "SELECT companies.sector, AVG(financials.revenue) FROM companies JOIN financials ON financials.company_id = companies.id WHERE financials.year = 2024 GROUP BY companies.sector",
+    "category": "group",
+    "ordered": false
+  },
+  {
+    "question": "total profit by sector in 2024",
+    "reference_sql": "SELECT companies.sector, SUM(financials.profit) FROM companies JOIN financials ON financials.company_id = companies.id WHERE financials.year = 2024 GROUP BY companies.sector",
+    "category": "group",
+    "ordered": false
+  },
+  {
+    "question": "average employees by sector in 2024",
+    "reference_sql": "SELECT companies.sector, AVG(financials.employees) FROM companies JOIN financials ON financials.company_id = companies.id WHERE financials.year = 2024 GROUP BY companies.sector",
+    "category": "group",
+    "ordered": false
+  },
+  {
+    "question": "average revenue by country in 2024",
+    "reference_sql": "SELECT companies.country, AVG(financials.revenue) FROM companies JOIN financials ON financials.company_id = companies.id WHERE financials.year = 2024 GROUP BY companies.country",
+    "category": "group",
+    "ordered": false
+  },
+  {
+    "question": "total profit by country in 2024",
+    "reference_sql": "SELECT companies.country, SUM(financials.profit) FROM companies JOIN financials ON financials.company_id = companies.id WHERE financials.year = 2024 GROUP BY companies.country",
+    "category": "group",
+    "ordered": false
+  },
+  {
+    "question": "average employees by country in 2024",
+    "reference_sql": "SELECT companies.country, AVG(financials.employees) FROM companies JOIN financials ON financials.company_id = companies.id WHERE financials.year = 2024 GROUP BY companies.country",
+    "category": "group",
+    "ordered": false
+  },
+  {
+    "question": "how many companies in technology",
+    "reference_sql": "SELECT COUNT(*) FROM companies WHERE sector='Technology'",
+    "category": "count",
+    "ordered": false
+  },
+  {
+    "question": "how many companies in healthcare",
+    "reference_sql": "SELECT COUNT(*) FROM companies WHERE sector='Healthcare'",
+    "category": "count",
+    "ordered": false
+  },
+  {
+    "question": "how many companies in retail",
+    "reference_sql": "SELECT COUNT(*) FROM companies WHERE sector='Retail'",
+    "category": "count",
+    "ordered": false
+  },
+  {
+    "question": "list companies from UK",
+    "reference_sql": "SELECT name FROM companies WHERE country='UK'",
+    "category": "filter",
+    "ordered": false
+  },
+  {
+    "question": "list companies from US",
+    "reference_sql": "SELECT name FROM companies WHERE country='US'",
+    "category": "filter",
+    "ordered": false
+  }
+]

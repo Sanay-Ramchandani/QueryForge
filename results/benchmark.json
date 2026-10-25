@@ -1,0 +1,507 @@
+{
+  "dataset": "locally authored, fictional SQLite business Q/A set (NOT WikiSQL)",
+  "sample_count": 71,
+  "engine_correct": 71,
+  "engine_accuracy": 1.0,
+  "baseline_correct": 41,
+  "baseline_accuracy": 0.5775,
+  "per_case": [
+    {
+      "question": "show companies",
+      "category": "entity",
+      "correct": true,
+      "baseline_correct": true,
+      "error": null
+    },
+    {
+      "question": "list companies",
+      "category": "entity",
+      "correct": true,
+      "baseline_correct": true,
+      "error": null
+    },
+    {
+      "question": "find companies",
+      "category": "entity",
+      "correct": true,
+      "baseline_correct": true,
+      "error": null
+    },
+    {
+      "question": "get all companies",
+      "category": "entity",
+      "correct": true,
+      "baseline_correct": true,
+      "error": null
+    },
+    {
+      "question": "list technology companies",
+      "category": "filter",
+      "correct": true,
+      "baseline_correct": true,
+      "error": null
+    },
+    {
+      "question": "which companies are in the technology sector",
+      "category": "filter",
+      "correct": true,
+      "baseline_correct": true,
+      "error": null
+    },
+    {
+      "question": "list healthcare companies",
+      "category": "filter",
+      "correct": true,
+      "baseline_correct": true,
+      "error": null
+    },
+    {
+      "question": "which companies are in the healthcare sector",
+      "category": "filter",
+      "correct": true,
+      "baseline_correct": true,
+      "error": null
+    },
+    {
+      "question": "list energy companies",
+      "category": "filter",
+      "correct": true,
+      "baseline_correct": true,
+      "error": null
+    },
+    {
+      "question": "which companies are in the energy sector",
+      "category": "filter",
+      "correct": true,
+      "baseline_correct": true,
+      "error": null
+    },
+    {
+      "question": "list retail companies",
+      "category": "filter",
+      "correct": true,
+      "baseline_correct": true,
+      "error": null
+    },
+    {
+      "question": "which companies are in the retail sector",
+      "category": "filter",
+      "correct": true,
+      "baseline_correct": true,
+      "error": null
+    },
+    {
+      "question": "list automotive companies",
+      "category": "filter",
+      "correct": true,
+      "baseline_correct": true,
+      "error": null
+    },
+    {
+      "question": "which companies are in the automotive sector",
+      "category": "filter",
+      "correct": true,
+      "baseline_correct": true,
+      "error": null
+    },
+    {
+      "question": "which companies are in UK",
+      "category": "filter",
+      "correct": true,
+      "baseline_correct": true,
+      "error": null
+    },
+    {
+      "question": "how many companies are in UK",
+      "category": "count",
+      "correct": true,
+      "baseline_correct": true,
+      "error": null
+    },
+    {
+      "question": "which companies are in US",
+      "category": "filter",
+      "correct": true,
+      "baseline_correct": true,
+      "error": null
+    },
+    {
+      "question": "how many companies are in US",
+      "category": "count",
+      "correct": true,
+      "baseline_correct": true,
+      "error": null
+    },
+    {
+      "question": "which companies are in Germany",
+      "category": "filter",
+      "correct": true,
+      "baseline_correct": true,
+      "error": null
+    },
+    {
+      "question": "how many companies are in Germany",
+      "category": "count",
+      "correct": true,
+      "baseline_correct": true,
+      "error": null
+    },
+    {
+      "question": "which companies are in Norway",
+      "category": "filter",
+      "correct": true,
+      "baseline_correct": true,
+      "error": null
+    },
+    {
+      "question": "how many companies are in Norway",
+      "category": "count",
+      "correct": true,
+      "baseline_correct": true,
+      "error": null
+    },
+    {
+      "question": "which companies are in Canada",
+      "category": "filter",
+      "correct": true,
+      "baseline_correct": true,
+      "error": null
+    },
+    {
+      "question": "how many companies are in Canada",
+      "category": "count",
+      "correct": true,
+      "baseline_correct": true,
+      "error": null
+    },
+    {
+      "question": "show revenue in 2024",
+      "category": "join",
+      "correct": true,
+      "baseline_correct": true,
+      "error": null
+    },
+    {
+      "question": "show revenue in 2023",
+      "category": "join",
+      "correct": true,
+      "baseline_correct": true,
+      "error": null
+    },
+    {
+      "question": "total revenue in 2024",
+      "category": "aggregate",
+      "correct": true,
+      "baseline_correct": true,
+      "error": null
+    },
+    {
+      "question": "average revenue in 2024",
+      "category": "aggregate",
+      "correct": true,
+      "baseline_correct": true,
+      "error": null
+    },
+    {
+      "question": "companies with revenue above 100 million in 2024",
+      "category": "conditional",
+      "correct": true,
+      "baseline_correct": false,
+      "error": null
+    },
+    {
+      "question": "companies with revenue below 100 million in 2024",
+      "category": "conditional",
+      "correct": true,
+      "baseline_correct": false,
+      "error": null
+    },
+    {
+      "question": "companies with revenue above 150 million in 2024",
+      "category": "conditional",
+      "correct": true,
+      "baseline_correct": false,
+      "error": null
+    },
+    {
+      "question": "companies with revenue below 150 million in 2024",
+      "category": "conditional",
+      "correct": true,
+      "baseline_correct": false,
+      "error": null
+    },
+    {
+      "question": "top 3 companies by revenue in 2024",
+      "category": "rank",
+      "correct": true,
+      "baseline_correct": false,
+      "error": null
+    },
+    {
+      "question": "lowest 3 companies by revenue in 2024",
+      "category": "rank",
+      "correct": true,
+      "baseline_correct": false,
+      "error": null
+    },
+    {
+      "question": "top 5 companies by revenue in 2024",
+      "category": "rank",
+      "correct": true,
+      "baseline_correct": false,
+      "error": null
+    },
+    {
+      "question": "lowest 5 companies by revenue in 2024",
+      "category": "rank",
+      "correct": true,
+      "baseline_correct": false,
+      "error": null
+    },
+    {
+      "question": "show profit in 2024",
+      "category": "join",
+      "correct": true,
+      "baseline_correct": true,
+      "error": null
+    },
+    {
+      "question": "show profit in 2023",
+      "category": "join",
+      "correct": true,
+      "baseline_correct": true,
+      "error": null
+    },
+    {
+      "question": "total profit in 2024",
+      "category": "aggregate",
+      "correct": true,
+      "baseline_correct": true,
+      "error": null
+    },
+    {
+      "question": "average profit in 2024",
+      "category": "aggregate",
+      "correct": true,
+      "baseline_correct": true,
+      "error": null
+    },
+    {
+      "question": "companies with profit above 10 million in 2024",
+      "category": "conditional",
+      "correct": true,
+      "baseline_correct": false,
+      "error": null
+    },
+    {
+      "question": "companies with profit below 10 million in 2024",
+      "category": "conditional",
+      "correct": true,
+      "baseline_correct": false,
+      "error": null
+    },
+    {
+      "question": "companies with profit above 20 million in 2024",
+      "category": "conditional",
+      "correct": true,
+      "baseline_correct": false,
+      "error": null
+    },
+    {
+      "question": "companies with profit below 20 million in 2024",
+      "category": "conditional",
+      "correct": true,
+      "baseline_correct": false,
+      "error": null
+    },
+    {
+      "question": "top 3 companies by profit in 2024",
+      "category": "rank",
+      "correct": true,
+      "baseline_correct": false,
+      "error": null
+    },
+    {
+      "question": "lowest 3 companies by profit in 2024",
+      "category": "rank",
+      "correct": true,
+      "baseline_correct": false,
+      "error": null
+    },
+    {
+      "question": "top 5 companies by profit in 2024",
+      "category": "rank",
+      "correct": true,
+      "baseline_correct": false,
+      "error": null
+    },
+    {
+      "question": "lowest 5 companies by profit in 2024",
+      "category": "rank",
+      "correct": true,
+      "baseline_correct": false,
+      "error": null
+    },
+    {
+      "question": "show employees in 2024",
+      "category": "join",
+      "correct": true,
+      "baseline_correct": true,
+      "error": null
+    },
+    {
+      "question": "show employees in 2023",
+      "category": "join",
+      "correct": true,
+      "baseline_correct": true,
+      "error": null
+    },
+    {
+      "question": "total employees in 2024",
+      "category": "aggregate",
+      "correct": true,
+      "baseline_correct": true,
+      "error": null
+    },
+    {
+      "question": "average employees in 2024",
+      "category": "aggregate",
+      "correct": true,
+      "baseline_correct": true,
+      "error": null
+    },
+    {
+      "question": "companies with employees above 300 in 2024",
+      "category": "conditional",
+      "correct": true,
+      "baseline_correct": false,
+      "error": null
+    },
+    {
+      "question": "companies with employees below 300 in 2024",
+      "category": "conditional",
+      "correct": true,
+      "baseline_correct": false,
+      "error": null
+    },
+    {
+      "question": "companies with employees above 500 in 2024",
+      "category": "conditional",
+      "correct": true,
+      "baseline_correct": false,
+      "error": null
+    },
+    {
+      "question": "companies with employees below 500 in 2024",
+      "category": "conditional",
+      "correct": true,
+      "baseline_correct": false,
+      "error": null
+    },
+    {
+      "question": "top 3 companies by employees in 2024",
+      "category": "rank",
+      "correct": true,
+      "baseline_correct": false,
+      "error": null
+    },
+    {
+      "question": "lowest 3 companies by employees in 2024",
+      "category": "rank",
+      "correct": true,
+      "baseline_correct": false,
+      "error": null
+    },
+    {
+      "question": "top 5 companies by employees in 2024",
+      "category": "rank",
+      "correct": true,
+      "baseline_correct": false,
+      "error": null
+    },
+    {
+      "question": "lowest 5 companies by employees in 2024",
+      "category": "rank",
+      "correct": true,
+      "baseline_correct": false,
+      "error": null
+    },
+    {
+      "question": "average revenue by sector in 2024",
+      "category": "group",
+      "correct": true,
+      "baseline_correct": false,
+      "error": null
+    },
+    {
+      "question": "total profit by sector in 2024",
+      "category": "group",
+      "correct": true,
+      "baseline_correct": false,
+      "error": null
+    },
+    {
+      "question": "average employees by sector in 2024",
+      "category": "group",
+      "correct": true,
+      "baseline_correct": false,
+      "error": null
+    },
+    {
+      "question": "average revenue by country in 2024",
+      "category": "group",
+      "correct": true,
+      "baseline_correct": false,
+      "error": null
+    },
+    {
+      "question": "total profit by country in 2024",
+      "category": "group",
+      "correct": true,
+      "baseline_correct": false,
+      "error": null
+    },
+    {
+      "question": "average employees by country in 2024",
+      "category": "group",
+      "correct": true,
+      "baseline_correct": false,
+      "error": null
+    },
+    {
+      "question": "how many companies in technology",
+      "category": "count",
+      "correct": true,
+      "baseline_correct": true,
+      "error": null
+    },
+    {
+      "question": "how many companies in healthcare",
+      "category": "count",
+      "correct": true,
+      "baseline_correct": true,
+      "error": null
+    },
+    {
+      "question": "how many companies in retail",
+      "category": "count",
+      "correct": true,
+      "baseline_correct": true,
+      "error": null
+    },
+    {
+      "question": "list companies from UK",
+      "category": "filter",
+      "correct": true,
+      "baseline_correct": true,
+      "error": null
+    },
+    {
+      "question": "list companies from US",
+      "category": "filter",
+      "correct": true,
+      "baseline_correct": true,
+      "error": null
+    }
+  ]
+}

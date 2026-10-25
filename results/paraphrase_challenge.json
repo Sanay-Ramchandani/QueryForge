@@ -1,0 +1,150 @@
+{
+  "dataset": "locally authored, fictional SQLite business Q/A set (NOT WikiSQL)",
+  "sample_count": 20,
+  "engine_correct": 20,
+  "engine_accuracy": 1.0,
+  "baseline_correct": 3,
+  "baseline_accuracy": 0.15,
+  "per_case": [
+    {
+      "question": "what is the total turnover during 2024",
+      "category": "other",
+      "correct": true,
+      "baseline_correct": false,
+      "error": null
+    },
+    {
+      "question": "how many firms are based in Germany",
+      "category": "other",
+      "correct": true,
+      "baseline_correct": false,
+      "error": null
+    },
+    {
+      "question": "list companies with sector technlogy",
+      "category": "other",
+      "correct": true,
+      "baseline_correct": false,
+      "error": null
+    },
+    {
+      "question": "list firms in Canada",
+      "category": "other",
+      "correct": true,
+      "baseline_correct": true,
+      "error": null
+    },
+    {
+      "question": "top 4 firms by sales for 2024",
+      "category": "other",
+      "correct": true,
+      "baseline_correct": false,
+      "error": null
+    },
+    {
+      "question": "smallest 3 firms by headcount in 2023",
+      "category": "other",
+      "correct": true,
+      "baseline_correct": false,
+      "error": null
+    },
+    {
+      "question": "how many healthcare companies are in Canada",
+      "category": "other",
+      "correct": true,
+      "baseline_correct": false,
+      "error": null
+    },
+    {
+      "question": "average earnings by country for 2022",
+      "category": "other",
+      "correct": true,
+      "baseline_correct": false,
+      "error": null
+    },
+    {
+      "question": "companies whose profit is at least 10 million in 2024",
+      "category": "other",
+      "correct": true,
+      "baseline_correct": false,
+      "error": null
+    },
+    {
+      "question": "companies whose revenue was below 200 million in 2025",
+      "category": "other",
+      "correct": true,
+      "baseline_correct": false,
+      "error": null
+    },
+    {
+      "question": "show sales in 2024",
+      "category": "other",
+      "correct": true,
+      "baseline_correct": false,
+      "error": null
+    },
+    {
+      "question": "show profit in 2022",
+      "category": "other",
+      "correct": true,
+      "baseline_correct": true,
+      "error": null
+    },
+    {
+      "question": "which technology firms are in the UK",
+      "category": "other",
+      "correct": true,
+      "baseline_correct": false,
+      "error": null
+    },
+    {
+      "question": "list companies from Norway",
+      "category": "other",
+      "correct": true,
+      "baseline_correct": true,
+      "error": null
+    },
+    {
+      "question": "what is the maximum profit in 2024",
+      "category": "other",
+      "correct": true,
+      "baseline_correct": false,
+      "error": null
+    },
+    {
+      "question": "companies with employees over 500 in 2024",
+      "category": "other",
+      "correct": true,
+      "baseline_correct": false,
+      "error": null
+    },
+    {
+      "question": "highest profit in 2023",
+      "category": "other",
+      "correct": true,
+      "baseline_correct": false,
+      "error": null
+    },
+    {
+      "question": "average staff by sector in 2024",
+      "category": "other",
+      "correct": true,
+      "baseline_correct": false,
+      "error": null
+    },
+    {
+      "question": "total income in 2022",
+      "category": "other",
+      "correct": true,
+      "baseline_correct": false,
+      "error": null
+    },
+    {
+      "question": "companies with turnover below 100 million in 2022",
+      "category": "other",
+      "correct": true,
+      "baseline_correct": false,
+      "error": null
+    }
+  ]
+}
