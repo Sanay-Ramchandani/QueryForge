@@ -22,7 +22,3 @@ Evaluation uses 71 curated queries over 15 fictional companies and 60 annual obs
 - Implement a neural baseline under pinned versions and controlled compute.
 - Add candidate ranking and validated execution-aware corrections.
 - Report public-dataset execution accuracy, latency, failure categories and confidence intervals.
-
-## Attribution and authorship
-
-The implementation was generated with AI assistance specifically for this project, using standard database and graph algorithms. It does not incorporate copied research-repository code. That is **not** a guarantee from a third-party code-similarity checker. Any subsequent contributor should accurately represent their own contributions.
