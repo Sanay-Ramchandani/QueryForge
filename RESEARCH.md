@@ -2,7 +2,7 @@
 
 **The original research is not reproduced or directly beaten by this repository.**
 
-**Inspiration:** Zhong, Xiong & Socher (2017), [Seq2SQL: Generating Structured Queries from Natural Language using Reinforcement Learning](https://arxiv.org/abs/1709.00103). That paper introduced structured text-to-SQL model training for WikiSQL, reporting 59.4% execution accuracy against a 35.9% sequence-to-sequence baseline. These numbers are **not comparable** with our fictional finance benchmark.
+**Inspiration:** Zhong, Xiong & Socher (2017), [Seq2SQL: Generating Structured Queries from Natural Language using Reinforcement Learning](https://arxiv.org/abs/1709.00103). That paper introduced structured text-to-SQL model training for WikiSQL, reporting 59.4% execution accuracy against a 35.9% sequence-to-sequence baseline.
 
 **What this project implements:** A domain-restricted, deterministic parser with SQLite schema introspection, graph-based foreign-key join discovery, parameterized query compilation, fuzzy categorical value matching, a browser API, and an intentionally weak keyword baseline. There is no transformer, trained NLP model, reinforcement learning, or execution-guided learning.
 
